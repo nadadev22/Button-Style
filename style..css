@@ -1,0 +1,43 @@
+body{
+display: grid;
+place-items: center;
+height: 100vh;
+
+}
+.btn{
+width: 200px;
+height: 50px;
+border-radius: 40px;
+font-size: 15px;
+font-family: inherit;
+border: none;
+position: relative;
+cursor: pointer;
+overflow: hidden;
+z-index: 1;
+box-shadow: 6px 6px 12px navajowhite ,-6px -6px 12px wheat;
+
+}
+.btn::before{
+content: '';
+width: 0;
+height: 50px;
+border-radius: 40px;
+position: absolute;
+top: 0;
+left: 0;
+background-image: linear-gradient(to right,hsl(204, 44%, 54%) 0%,green
+);
+
+transition: .5s ease;
+display: block;
+z-index: -1;
+
+}
+.btn:hover:before{
+width:200px;
+
+
+
+
+}
